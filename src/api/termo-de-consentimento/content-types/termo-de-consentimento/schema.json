@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "termo_de_consentimentos",
+  "info": {
+    "singularName": "termo-de-consentimento",
+    "pluralName": "termo-de-consentimentos",
+    "displayName": "TermoDeConsentimento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "textoConsentimento": {
+      "type": "richtext",
+      "required": true
+    },
+    "dataInicio": {
+      "type": "datetime",
+      "required": true
+    },
+    "dataFim": {
+      "type": "datetime"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

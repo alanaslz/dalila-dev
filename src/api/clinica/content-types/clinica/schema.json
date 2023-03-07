@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinicas",
+  "info": {
+    "singularName": "clinica",
+    "pluralName": "clinicas",
+    "displayName": "Clinica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "razaoSocial": {
+      "type": "string"
+    },
+    "nomeFantasia": {
+      "type": "string"
+    },
+    "inscricaoMunicipal": {
+      "type": "string"
+    },
+    "alvaraFuncionamento": {
+      "type": "string"
+    },
+    "croClinica": {
+      "type": "string"
+    },
+    "responsavelTecnico": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profissional.profissional"
+    },
+    "unidades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::unidade.unidade"
+    },
+    "logomarca": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

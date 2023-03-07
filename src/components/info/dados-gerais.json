@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_info_dados_gerais",
+  "info": {
+    "displayName": "dadosGerais"
+  },
+  "options": {},
+  "attributes": {
+    "sexo": {
+      "type": "enumeration",
+      "enum": [
+        "Feminino",
+        "Masculino",
+        "Prefiro não informar"
+      ],
+      "required": false
+    },
+    "estadoCivil": {
+      "type": "enumeration",
+      "enum": [
+        "solteiro",
+        "casado",
+        "separado (judicial ou extrajudicialmente)",
+        "divorciado",
+        "viúvo"
+      ]
+    },
+    "dataNascimento": {
+      "type": "date"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "rg": {
+      "type": "string"
+    }
+  }
+}

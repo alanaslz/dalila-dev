@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_info_contatoes",
+  "info": {
+    "displayName": "Contato"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "telefones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.dados-contato"
+    }
+  }
+}

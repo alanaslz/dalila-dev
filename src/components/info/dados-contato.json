@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_info_dados_contatoes",
+  "info": {
+    "displayName": "dadosTelefonicos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tipoTelefone": {
+      "type": "enumeration",
+      "enum": [
+        "celular",
+        "celular + whatsapp",
+        "telefone residencial",
+        "telefone comercial"
+      ]
+    },
+    "numero": {
+      "type": "string"
+    },
+    "observacao": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_layout_headers",
+  "info": {
+    "displayName": "header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logomarca": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.menu"
+    }
+  }
+}

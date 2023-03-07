@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendamentos",
+  "info": {
+    "singularName": "agendamento",
+    "pluralName": "agendamentos",
+    "displayName": "Agendamento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "paciente",
+        "reunião",
+        "compromisso"
+      ]
+    },
+    "tempoDuracao": {
+      "type": "decimal"
+    },
+    "profissionals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profissional.profissional",
+      "mappedBy": "agendamento"
+    },
+    "unidade": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidade.unidade"
+    },
+    "procedimentosPrevistos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::procedimento.procedimento"
+    },
+    "data": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "reservado",
+        "agendado",
+        "confirmado",
+        "compareceu",
+        "faltou",
+        "desmarcou"
+      ]
+    },
+    "paciente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paciente.paciente"
+    },
+    "sala": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sala.sala"
+    }
+  }
+}

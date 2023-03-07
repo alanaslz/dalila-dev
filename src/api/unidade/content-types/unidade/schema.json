@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unidades",
+  "info": {
+    "singularName": "unidade",
+    "pluralName": "unidades",
+    "displayName": "Unidade",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.endereco"
+    },
+    "contato": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.contato"
+    },
+    "clinica": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::clinica.clinica"
+    },
+    "horarioFuncionamento": {
+      "type": "richtext"
+    },
+    "procedimentos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::procedimento.procedimento",
+      "mappedBy": "unidade"
+    }
+  }
+}

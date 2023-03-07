@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_localizacao_fisica_unidades",
+  "info": {
+    "displayName": "Unidade"
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "enderecoUnidade": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.endereco"
+    }
+  }
+}

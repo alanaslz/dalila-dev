@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pacientes",
+  "info": {
+    "singularName": "paciente",
+    "pluralName": "pacientes",
+    "displayName": "Paciente",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "dadosGerais": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.dados-gerais"
+    },
+    "enderecoPaciente": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.endereco"
+    },
+    "dadosContato": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.contato"
+    }
+  }
+}

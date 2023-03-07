@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_info_enderecos",
+  "info": {
+    "displayName": "Endereco",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cep": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "enumeration",
+      "enum": [
+        "Afghanistan",
+        "Albânia",
+        "Alemanha",
+        "Andorra",
+        "Angola",
+        "Antígua e Barbuda",
+        "Argentina",
+        "Armênia",
+        "Austrália",
+        "Áustria",
+        "Azerbaijão",
+        "Bahamas",
+        "Bangladesh",
+        "Barbados",
+        "Barein",
+        "Bélgica",
+        "Belize",
+        "Benin",
+        "Butão",
+        "Bolívia",
+        "Bósnia e Herzegovina",
+        "Botsuana",
+        "Brasil"
+      ],
+      "default": "Brasil"
+    },
+    "geolocalizacao": {
+      "type": "string"
+    }
+  }
+}
